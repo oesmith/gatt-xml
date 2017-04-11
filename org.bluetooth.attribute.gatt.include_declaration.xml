@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Bluetooth SIG, Inc. All rights reserved. -->
+<Attribute xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/attribute.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+type="org.bluetooth.attribute.gatt.include_declaration"
+name="Include" uuid="2802">
+  <Value>
+    <Field name="Included Service Attribute Handle">
+      <Requirement>Mandatory</Requirement>
+      <Format>uint16</Format>
+    </Field>
+    <Field name="End Group Handle">
+      <Requirement>Mandatory</Requirement>
+      <Format>uint16</Format>
+    </Field>
+    <Field name="Service UUID">
+      <Requirement>Mandatory</Requirement>
+      <Format>gatt_uuid</Format>
+    </Field>
+  </Value>
+</Attribute>

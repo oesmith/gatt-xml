@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Bluetooth SIG, Inc. All rights reserved. -->
+<Attribute xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/attribute.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+type="org.bluetooth.attribute.gatt.characteristic_declaration"
+name="Characteristic Declaration" uuid="2803">
+  <Value>
+    <Field name="Characteristic Properties">
+      <Requirement>Mandatory</Requirement>
+      <Format>uint8</Format>
+      <BitField>
+        <Bit index="0" size="1" name="Broadcast">
+          <Enumerations>
+            <Enumeration key="0" value="No Broadcast" />
+            <Enumeration key="1" value="Broadcast" />
+          </Enumerations>
+        </Bit>
+        <Bit index="1" size="1" name="Read">
+          <Enumerations>
+            <Enumeration key="0" value="No Read" />
+            <Enumeration key="1" value="Read" />
+          </Enumerations>
+        </Bit>
+        <Bit index="2" size="1" name="Write Without Response">
+          <Enumerations>
+            <Enumeration key="0"
+            value="No Write Without Response" />
+            <Enumeration key="1" value="Write Without Response" />
+          </Enumerations>
+        </Bit>
+        <Bit index="3" size="1" name="Write">
+          <Enumerations>
+            <Enumeration key="0" value="No Write" />
+            <Enumeration key="1" value="Write" />
+          </Enumerations>
+        </Bit>
+        <Bit index="4" size="1" name="Notify">
+          <Enumerations>
+            <Enumeration key="0" value="No Notify" />
+            <Enumeration key="1" value="Notify" />
+          </Enumerations>
+        </Bit>
+        <Bit index="5" size="1" name="Indicate">
+          <Enumerations>
+            <Enumeration key="0" value="No Indicate" />
+            <Enumeration key="1" value="Indicate" />
+          </Enumerations>
+        </Bit>
+        <Bit index="6" size="1" name="Authenticated Signed Writes">
+          <Enumerations>
+            <Enumeration key="0"
+            value="No Authenticated Signed Writes" />
+            <Enumeration key="1"
+            value="Authenticated Signed Writes" />
+          </Enumerations>
+        </Bit>
+        <Bit index="7" size="1" name="Extended Properties">
+          <Enumerations>
+            <Enumeration key="0" value="No Extended Properties" />
+            <Enumeration key="1" value="Extended Properties" />
+          </Enumerations>
+        </Bit>
+      </BitField>
+    </Field>
+    <Field name="Characteristic Value Handle">
+      <Requirement>Mandatory</Requirement>
+      <Format>uint16</Format>
+    </Field>
+    <Field name="Characteristic UUID">
+      <Requirement>Mandatory</Requirement>
+      <Format>gatt_uuid</Format>
+    </Field>
+  </Value>
+</Attribute>

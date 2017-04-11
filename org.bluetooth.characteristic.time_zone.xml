@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Bluetooth SIG, Inc. All rights reserved. -->
+<Characteristic xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+name="Time Zone" type="org.bluetooth.characteristic.time_zone"
+uuid="2A0E">
+  <InformativeText></InformativeText>
+  <Value>
+    <Field name="Time Zone">
+      <Requirement>Mandatory</Requirement>
+      <Format>sint8</Format>
+      <Minimum>-48</Minimum>
+      <Maximum>56</Maximum>
+      <Description>Offset from UTC in number of 15 minutes
+      increments. A value of -128 means that the time zone offset
+      is not known. The offset defined in this characteristic is
+      constant, regardless whether daylight savings is in
+      effect.</Description>
+    </Field>
+  </Value>
+</Characteristic>

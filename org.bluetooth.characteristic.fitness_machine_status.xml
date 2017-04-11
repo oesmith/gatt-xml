@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2017 Bluetooth SIG, Inc. All rights reserved.-->
+<Characteristic xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+name="Fitness Machine Status"
+type="org.bluetooth.characteristic.fitness_machine_status"
+uuid="2ADA" last-modified="2017-02-14" approved="Yes">
+  <InformativeText>
+    <Summary>The Fitness Machine Status characteristic is defined
+    in the Fitness Machine Service Specification.</Summary>
+  </InformativeText>
+</Characteristic>
